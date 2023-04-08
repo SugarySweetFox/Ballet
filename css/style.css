@@ -335,7 +335,7 @@ div.line
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 80px auto;
+    margin: 80px auto 0px auto;;
 }
 
 .bloks div {
@@ -345,10 +345,10 @@ div.line
     padding: 60px 0px 120px 100px;
 }
 .price button {
-    margin: 60px auto;
+    margin: 60px auto 0px auto;
 }
 
-.bloks h3 {
+.bloks .first {
     color: #FFF4F5;
     margin-bottom: 20px;
 }
@@ -359,6 +359,7 @@ div.line
     line-height: 32px;
     margin-bottom: 5px;
     margin-top: 20px;
+    color: #FFF4F5;
 }
 
 .bloks p {
@@ -379,4 +380,21 @@ div.line
     height: 876px;
 }
 
+.com {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px auto 0px auto;
+}
+
+.com div {
+    width: 380px;
+    height: 291px;
+    background-color: #211D1D;
+}
+
+.comment button {
+    margin: 60px auto 0px auto;
+}
 
