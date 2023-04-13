@@ -288,7 +288,7 @@ div.line
     background-image: url(../img/fon3.png);
     background-size: contain;
     background-color: #110F0F;
-    background-position: left top;
+    background-position: right top;
     background-repeat: no-repeat;        
 }
 
@@ -442,7 +442,7 @@ footer {
     background-image: url(../img/fon4.png);
     background-size: contain;
     background-color: #121212;
-    background-position: left top;
+    background-position: right top;
     background-repeat: no-repeat; 
 }
 
@@ -536,7 +536,31 @@ footer img {
 }
 
 .c {
-    margin: auto auto 0 auto;
+    margin: 40px auto 0 auto;
     text-align: center;
 }
 
+span {
+    color: #D69898;
+}
+
+.circle {
+    background: #211D1D;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+  }
+
+.circles {
+    width: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px auto 60px auto;
+}
+
+@media screen and (max-width: 1024px) {
+
+    
+    
+}
