@@ -20,6 +20,13 @@ header {
     background-repeat: no-repeat;
 }
 
+
+#menu__toggle {
+    opacity: 0;
+  }
+ 
+
+
 header ul {
     display: flex;
     list-style: none;
@@ -394,6 +401,12 @@ div.line
     background-color: #211D1D;
 }
 
+.com .blok-com-1 {
+    width: 380px;
+    height: 291px;
+    background-color: #211D1D;
+}
+
 .comment button {
     margin: 60px auto 0px auto;
 }
@@ -433,6 +446,10 @@ div.line
 }
 
 .blok-com {
+    padding: 40px;
+}
+
+.blok-com-1 {
     padding: 40px;
 }
 
@@ -559,8 +576,206 @@ span {
     margin: 32px auto 60px auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
 
+    .header img {
+        width: 105px;
+        height: 43px;
+    }
+
+    ul {
+        visibility: hidden;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu {
+        visibility: visible;
+        left: 0;
+      }
+
+       /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    margin: 20px 10px 0 80%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  header {
+    background-image: url(../img/fon1-mini.png);
+    width: 600px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    width: 80%;
+    height: 155px;
+    text-align: center;
+    margin: 140px auto 80px auto;
+  }
+   
+  h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 150%;  
+  }
+
+  h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
     
-    
+  .content p {
+    visibility: hidden;
+    display: none;
+  }
+
+  .adv-pt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .adv-pt img {
+    width: 24px;
+    height: 24px;
+    margin: 10px auto;
+  }
+
+  .left, .right {
+    height: 200px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+
+  }
+
+  .line {
+    visibility: hidden;
+    display: none;
+  }
+
+  .about-us {
+    background-image: url(../img/fon2-mini.png);
+}
+
+.about-us p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;  
+    background: rgba(239, 222, 223, 0.3);
+    text-align: center;
+    margin: 30px auto 120px auto;
+    padding: 40px;
+    width: 60%;
+}
+
+.left-about {
+    visibility: hidden;
+    display: none;
+}
+
+.about-us div {
+    display: flex;
+    flex-direction: column;
+}
+
+.card1, .card3 {
+    visibility: hidden;
+    display: none;
+}
+
+.card {
+    width: 80%;
+}
+
+.education {
+    background-image: url(../img/fon3-mini.png);
+}
+
+.learn {
+    margin: 40px 0 0 20px;
+}
+
+.bloks {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloks div {
+    margin: 10px;
+}
+
+.blok-com {
+    visibility: hidden;
+    display: none;
+    margin-top: 80px;
+}
+
+.content-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #0A0A0A;
+    height: auto;
+    background-image: none;
+}
+
+.comment {
+    height: auto;
+}
+
+
 }
